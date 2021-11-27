@@ -1,8 +1,10 @@
-import math
+import requests
 
+def get_ip():
+    return requests.get('https://api.ipify.org/').text
 
 def main():
-    print(math.pow(12, 5))
+    print(f"Hello User!\nYour IP is: {get_ip()}")
 
 if __name__ == "__main__":
-    main()
+	main()
