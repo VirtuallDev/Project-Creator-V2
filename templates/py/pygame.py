@@ -1,6 +1,9 @@
 import pygame
 from pygame.locals import *
 
+# Constant variables
+WHITE = (255, 255, 255)
+
 # New Screen
 pygame.init()
 screen = pygame.display.set_mode((1920//2, 1080//2))
@@ -13,7 +16,7 @@ running = True
 while running:
     
     # fill the screen with white background - R = 255, G = 255, B = 255
-    screen.fill((255,255,255))
+    screen.fill(WHITE)
 
     # for every event loop
     for event in pygame.event.get():
